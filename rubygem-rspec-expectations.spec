@@ -1,7 +1,7 @@
 %define oname rspec-expectations
 
 Name:       rubygem-%{oname}
-Version:    2.0.1
+Version:    2.6.0
 Release:    %mkrel 1
 Summary:    Behaviour Driven Development for Ruby
 Group:      Development/Ruby
@@ -13,8 +13,8 @@ Requires:   rubygems
 Requires:   rubygem(diff-lcs) >= 1.1.2
 Requires:   rubygem(cucumber) >= 0.6.2
 Requires:   rubygem(aruba) >= 0.1.1
-Requires:   rubygem(rspec-core) = %{version}
-Requires:   rubygem(rspec-mocks) = %{version}
+Requires:   rubygem(rspec-core)
+Requires:   rubygem(rspec-mocks)
 BuildRequires: rubygems
 BuildArch:  noarch
 Provides:   rubygem(%{oname}) = %{version}
@@ -42,17 +42,17 @@ rm -rf %{buildroot}
 %defattr(-, root, root, -)
 %dir %{ruby_gemdir}/gems/%{oname}-%{version}/
 %{ruby_gemdir}/gems/%{oname}-%{version}/.document
+%{ruby_gemdir}/gems/%{oname}-%{version}/.travis.yml
 %{ruby_gemdir}/gems/%{oname}-%{version}/cucumber.yml
+%{ruby_gemdir}/gems/%{oname}-%{version}/Guardfile
 %{ruby_gemdir}/gems/%{oname}-%{version}/Gemfile
 %{ruby_gemdir}/gems/%{oname}-%{version}/features/
 %{ruby_gemdir}/gems/%{oname}-%{version}/lib/
 %{ruby_gemdir}/gems/%{oname}-%{version}/spec/
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/History.markdown
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/License.txt
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/Rakefile
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.markdown
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/Upgrade.markdown
+%doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.md
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/specs.watchr
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/%{oname}.gemspec
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
