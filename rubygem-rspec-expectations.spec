@@ -16,6 +16,7 @@ Requires:   rubygem(aruba) >= 0.1.1
 Requires:   rubygem(rspec-core)
 Requires:   rubygem(rspec-mocks)
 BuildRequires: rubygems
+BuildRequires: ruby-rdoc
 BuildArch:  noarch
 Provides:   rubygem(%{oname}) = %{version}
 
