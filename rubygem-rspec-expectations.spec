@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    2.6.0
-Release:    %mkrel 2
+Release:    %mkrel 3
 Summary:    Behaviour Driven Development for Ruby
 Group:      Development/Ruby
 License:    MIT
@@ -13,7 +13,7 @@ Requires:   rubygems
 Requires:   rubygem(diff-lcs) >= 1.1.2
 Requires:   rubygem(cucumber) >= 0.6.2
 Requires:   rubygem(aruba) >= 0.1.1
-#Requires:   rubygem(rspec-core)
+Requires:   rubygem(rspec-core)
 Requires:   rubygem(rspec-mocks)
 BuildRequires: rubygems
 BuildRequires: ruby-rdoc
