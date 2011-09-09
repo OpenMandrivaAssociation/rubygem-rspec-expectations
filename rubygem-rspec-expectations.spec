@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    2.6.0
-Release:    %mkrel 1
+Release:    %mkrel 2
 Summary:    Behaviour Driven Development for Ruby
 Group:      Development/Ruby
 License:    MIT
