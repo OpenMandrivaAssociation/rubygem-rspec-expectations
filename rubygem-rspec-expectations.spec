@@ -6,7 +6,7 @@ Release:	3
 Summary:    Behaviour Driven Development for Ruby
 Group:      Development/Ruby
 License:    MIT
-URL:        http://github.com/rspec/rspec-expectations
+URL:        https://github.com/rspec/rspec-expectations
 Source0:    http://rubygems.org/downloads/%{oname}-%{version}.gem
 Requires:   rubygems
 Requires:   rubygem(diff-lcs) >= 1.1.2
